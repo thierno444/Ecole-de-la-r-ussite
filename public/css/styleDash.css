@@ -1,0 +1,71 @@
+.sidebar {
+    background-color: #004D40;
+    padding-top: 20px;
+    position: fixed;
+    width: 250px;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+}
+
+.sidebar .nav-item {
+    width: 100%; /* Prendre toute la largeur */
+    list-style: none;
+}
+
+.sidebar .nav-link {
+    color: #ffffff;
+    padding: 10px 15px;
+    display: block; /* Assurez-vous que le lien prend toute la largeur */
+    width: 100%; /* Ajoutez ceci pour forcer le lien à occuper tout l’espace disponible */
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Enlève le soulignement */
+    color: white; /* Texte en blanc */
+    background-color: transparent; /* Fond transparent par défaut */
+
+}
+
+#icon_menu {
+    color: #fff;
+    font-size: 18px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: #20B2AA;
+    color: #ffffff;
+}
+
+.sidebar .nav-link:focus, 
+.sidebar .nav-link:visited {
+    color: white; /* Assure que le lien reste blanc après avoir été cliqué */
+}
+
+/* Header styling */
+.header {
+    margin-left: 250px;
+    padding: 15px 20px;
+    background-color: #e8e8e9;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: calc(100% - 250px);
+    top: 0;
+}
+
+/* Bouton de déconnexion */
+.header .btn-danger {
+    background-color: #004D40;
+    border-color: #004D40;
+}
+
+.header .btn {
+    margin-left: 10px;
+}
+
+/* Contenu principal */
+.content {
+    margin-left: 250px;
+    margin-top: 60px;
+    padding: 20px;
+}
